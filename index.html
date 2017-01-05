@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+  <title>Reference Notes</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="styles/vendor/foundation/foundation.css">
+  <link rel="stylesheet" href="styles/app.css">
+  <script src="scripts/vendor/pace.min.js"></script>
+</head>
+
+<body>
+  <div id="loader"></div>
+  <nav class="top-bar docs-bar hide-for-small">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="https://ajinkya-91.github.io/reference-notes/">Reference Notes</a></h1>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right">
+        <li class="has-dropdown not-click">
+          <a data-url="regex/introduction" data-title="Regular Expression" onclick="getData(this)">Regex</a>
+          <ul class="dropdown">
+            <li class="title back js-generated">
+              <h5><a href="javascript:void(0)">Back</a></h5>
+            </li>
+            <li><a data-url="regex/introduction" data-title="Regular Expression" onclick="getData(this)">Introduction</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown not-click">
+          <a data-url="cheatsheet/home" data-title="CheatSheet" onclick="getData(this)">CheatSheet</a>
+          <ul class="dropdown">
+            <li class="title back js-generated">
+              <h5><a href="javascript:void(0)">Back</a></h5>
+            </li>
+            <li><a data-url="cheatsheet/regex" data-title="CheatSheet - Regex" onclick="getData(this)">Regex</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
+  <div class="content">
+    <div class="content-title"></div>
+    <div class="content-body"></div>
+    <div id="disqus_thread"></div>
+  </div>
+  <script src="scripts/vendor/jquery-3.1.1.min.js"></script>
+  <script src="scripts/vendor/foundation/what-input.js"></script>
+  <script src="scripts/vendor/foundation/foundation.min.js"></script>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-586d317d6cfbdebc"></script>
+  <script src="scripts/app.js"></script>
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://ajinkya-91.github.io/reference-notes/";
+      this.page.identifier = "topic";
+    };
+    (function () { // DON'T EDIT BELOW THIS LINE
+      var d = document,
+        s = d.createElement('script');
+      s.src = '//reference-notes.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+
+</html>
