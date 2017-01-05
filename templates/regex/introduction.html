@@ -1,0 +1,54 @@
+<div class="post-full-width-image">
+    <img src="img/posts/dog.jpg" alt="I dont know Regex">
+</div>
+<div class="post-title">
+    Regex for Dogs
+</div>
+<div class="post-content">
+    <p>We all know learning Regex (aka Regular Expression) is a tough, but believe me it is not as tough as it looks . . . </p>
+    <p>Follow along with me and I promise at the end you will thank me for writing this series.</p>
+    <p class="secondary-title">First things first . . .</p>
+    <p class="secondary-title">What is Regex ? </p>
+    <p>A regular expression is a special text string for describing a search pattern. You can think of regular expressions as
+        wildcards on steroids. Regular expressions are extremely useful in extracting information from text such as code,
+        log files, spreadsheets, or even documents.</p>
+    <p class="highlight">All Regex start with '/' and ends with '/'</p>
+    <p>Here are few examples</p>
+    <pre class="language-markup">
+        <code>
+            /Hello/
+            /\|[^\|=]*=/
+            /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.[\W]).{8,}$/
+            /I know it looks alien/
+        </code>
+    </pre>
+    <p>Don't shy away now. We will have alot more complex Regex in future post. So sit tight . . .</p>
+
+    <p>So, lets start Regex . . .</p>
+
+    <p>Our first assignment is to find how many <span class="highlight"> "dolor"</span> and <span class="highlight">"dolore"</span> are there in below paragraph</p>
+
+    <blockquote>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </blockquote>
+
+    <p class="highlight">To find any set of letters or number we just put in the letters or number in "//"</p>
+    <pre class="language-markup">
+        <code>
+            /123-456/ ## Find's "123-456" in a given string.
+            /Robin96/ ## Find's "Robin96" in a given string.
+            /Hat/     ## Find's "Hat" in a given string.
+        </code>
+    </pre>
+    <p>Important point to note here is this regex <span class="highlight">"/Hat/"</span> finds <span class="highlight">"Hat"</span> and not <span class="highlight">"hat"</span>, meaning it is <span class="highlight">case sensitive.</span></p>
+
+    <p>So to find <span class="highlight"> "dolor"</span> regex is <span class="highlight"> /dolor/</span></p>
+    <p>And to find <span class="highlight"> "dolore"</span> regex is <span class="highlight"> /dolore/</span></p>
+
+    <p>To try out the above regex, there is cool Regex tester tool that allows to test and learn. So I highly recommend you to give it try.(<a href="http://regexr.com/" target="_blank">Regexr</a>)</p>
+
+    <p>It is simple to use, simply copy the above Lorem ipsum text and paste it in "Text" section and then enter your regex to get required string highlighted.</p> 
+
+    <p>I hope it was very easy, till now. In next post we will get in more depth and explore more.</p>
+    <p> Happy Learning Regex !!! </p>
+</div>
