@@ -45,6 +45,7 @@ if (topic != false) {
 }
 
 function getData(x) {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
     var url = $(x).data('url');
     var title = $(x).data('title');
     history.pushState(title, 'Title', "/reference-notes/?topic=" + url);
