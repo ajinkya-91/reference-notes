@@ -42,6 +42,21 @@ if (topic != false) {
         });
     }
     loadContent(topic);
+} else {
+    function loadContent(url) {
+        var ajaxUrl = BASE_URL + "templates/home.html";
+        $(document).attr("title", "Home");
+
+        $.ajax({
+            type: 'GET',
+            url: ajaxUrl,
+            dataType: 'html',
+            success: function (data) {
+                $('.content > .content-body').html(data);
+            }
+        });
+    }
+    loadContent(topic);
 }
 
 function getData(x) {
