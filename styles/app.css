@@ -173,6 +173,7 @@ ul.right>li:last-child {
     color: white;
     font-weight: bold;
     padding: 10px 15px;
+    padding-left: 54px;
     min-height: 44px;
 }
 
