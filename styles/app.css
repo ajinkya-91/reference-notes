@@ -189,6 +189,7 @@ ul.right>li:last-child {
 
 .post-full-width-image > img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .text-align-center{
@@ -214,6 +215,7 @@ ul.right>li:last-child {
 }
 
 div#disqus_thread {
+    display: block;
     margin: 20px auto;
     margin-top: 20px;
     margin-right: 7%;
